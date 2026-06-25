@@ -15,12 +15,14 @@ Open `index.html` in a browser — that's it. No install, no build.
 
 ## Deploy (GitHub Pages)
 
-A workflow at `.github/workflows/deploy.yml` publishes the site on every push
-to `main`. To turn it on once:
+The site is published straight from the repository root on `main`. To turn it
+on once:
 
-1. Push this repo to GitHub.
-2. **Settings → Pages → Source: GitHub Actions.**
+1. Push this repo to GitHub (the repo must be public, or Pages on a paid plan).
+2. **Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`.**
 3. The site goes live at `https://<user>.github.io/<repo>/`.
+
+Every later push to `main` redeploys automatically.
 
 ## To customize
 
